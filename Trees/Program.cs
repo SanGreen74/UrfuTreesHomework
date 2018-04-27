@@ -7,10 +7,13 @@ namespace Trees
     {
         public static void Main(string[] args)
         {
-            var tree = new RandomizingTree<int>();
+            var rTree = new RandomizingTree<int>();
+            var avlTree = new AvlTree<int>();
             for (var i = 0; i < 1000000; i++)
-                tree.Insert(i);
-            var a = 10;
+                rTree.Insert(i);
+
+            for (var i = 0; i < 1000000; i++)
+                avlTree.Insert(i);
         }
     }
 }
